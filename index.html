@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artisan Coffee Shop Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="menu-wrapper">
+    <header class="menu-header">
+      <span class="est">Est. 2026 &bull; Handcrafted Daily</span>
+      <h1>Brew &amp; Botanics</h1>
+      <p class="tagline">Single origin coffee, artisan tea, and fresh bakery treats.</p>
+
+      <nav class="category-tabs" id="categoryTabs">
+        <button class="tab-btn active" data-category="all">All Items</button>
+        <button class="tab-btn" data-category="espresso">Espresso</button>
+        <button class="tab-btn" data-category="cold">Cold Brews</button>
+        <button class="tab-btn" data-category="bakery">Bakery</button>
+      </nav>
+    </header>
+
+    <main class="menu-grid" id="menuGrid">
+      <div class="menu-item" data-category="espresso">
+        <div class="item-info">
+          <div class="item-title-row">
+            <h3 class="item-name">Velvet Flat White</h3>
+            <span class="dots"></span>
+            <span class="item-price">$4.75</span>
+          </div>
+          <p class="item-desc">Double ristretto shot with micro-foamed organic whole milk.</p>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="espresso">
+        <div class="item-info">
+          <div class="item-title-row">
+            <h3 class="item-name">Spanish Cortado</h3>
+            <span class="dots"></span>
+            <span class="item-price">$4.25</span>
+          </div>
+          <p class="item-desc">Equal parts rich espresso and silky warm milk with cinnamon dusting.</p>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="cold">
+        <div class="item-info">
+          <div class="item-title-row">
+            <h3 class="item-name">Vanilla Sweet Cream Cold Brew</h3>
+            <span class="dots"></span>
+            <span class="item-price">$5.50</span>
+          </div>
+          <p class="item-desc">18-hour slow steeped cold brew topped with house vanilla bean cream.</p>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="cold">
+        <div class="item-info">
+          <div class="item-title-row">
+            <h3 class="item-name">Nitro Cascara Tonic</h3>
+            <span class="dots"></span>
+            <span class="item-price">$5.25</span>
+          </div>
+          <p class="item-desc">Coffee cherry cascara tea infused with citrus tonic and nitro bubbles.</p>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="bakery">
+        <div class="item-info">
+          <div class="item-title-row">
+            <h3 class="item-name">Almond Cardamom Croissant</h3>
+            <span class="dots"></span>
+            <span class="item-price">$4.50</span>
+          </div>
+          <p class="item-desc">Twice-baked flaky butter pastry filled with rich almond frangipane.</p>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="bakery">
+        <div class="item-info">
+          <div class="item-title-row">
+            <h3 class="item-name">Blueberry Lemon Scone</h3>
+            <span class="dots"></span>
+            <span class="item-price">$3.75</span>
+          </div>
+          <p class="item-desc">Fresh wild blueberries with tangy Meyer lemon glaze and clotted cream.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="menu-footer">
+      <p>Plant-based oat and almond milk available upon request (+ $0.75)</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
